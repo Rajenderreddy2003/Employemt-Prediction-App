@@ -26,6 +26,14 @@ To analyze, preprocess, and model the data to **predict employment status (`Empl
 
 ---
 
+## 🔗 Live Demo
+
+Try the application live on **Hugging Face Spaces**:
+
+👉 [Employment Prediction App](https://huggingface.co/spaces/Rajenderreddy2003/Employment_Prediction_App)
+
+---
+
 ## 🛠️ Features & Workflow
 
 ### 1. 📄 Data Understanding
