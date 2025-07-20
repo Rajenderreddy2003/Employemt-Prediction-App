@@ -1,1 +1,53 @@
+import streamlit as st
 
+st.set_page_config(page_title="Problem & Objective", layout="centered")
+
+st.title("📌 Problem Statement & Objective")
+st.markdown("---")
+
+## 🧩 Problem Statement
+st.markdown("""
+In today’s data-driven world, predicting employability is a significant challenge due to the complex interplay of **technical skills**, **education**, **experience**, and **personal factors** such as **mental health** or **age**.
+
+Despite high demand in tech industries, many skilled individuals remain unemployed or underemployed, and organizations struggle to identify talent based on data alone.
+
+Hence, there is a need for a smart solution that:
+- Understands multiple dimensions of a candidate
+- Predicts employment likelihood
+- Helps individuals and organizations make informed decisions
+""")
+
+
+## 🎯 Project Objective
+st.markdown("""
+The main objective of this project is to build a **Machine Learning-based web application** that can:
+
+1. 🧠 **Analyze candidate information** including:
+   - Educational qualifications
+   - Technical and computer skills
+   - Mental health status
+   - Previous work and salary details
+
+2. 🔍 **Predict the employment status** (Employed or Not Employed)
+
+3. 🛠️ **Enable interactivity** using a Streamlit web interface
+
+4. 📈 **Provide insights** on how certain skills and factors contribute to employability
+
+This tool can be used by:
+- Individuals to **self-assess their employability**
+- Counselors and mentors to **guide students or job seekers**
+- HR analysts to explore **data-based hiring potential**
+""")
+
+
+## ✅ Outcome
+st.markdown("""
+By the end of this project, we aim to deliver a working system that not only predicts employment status accurately but also provides a **user-friendly interface** to engage with real-world survey data interactively.
+""")
+
+if st.button("Back to Introduction"):
+    st.switch_page("app.py")
+
+if st.button("Next Page"):
+    st.switch_page("pages/2_Data Understanding.py")
