@@ -11,9 +11,14 @@ st.title("🔍 Data Understanding")
 st.markdown("""
 ### 📄 Dataset Overview
 
-This dataset, sourced from an **open-source platform**, contains records of individuals with various demographic and technical attributes.  
+This dataset, sourced from an **open-source platform**, contains records of individuals with various demographic, educational, and technical attributes.  
 The goal is to predict whether a person is **employed** or **unemployed** based on their background, skills, and experience.  
-A **Naive Bayes classifier** is being built using this data.
+
+We experimented with several machine learning algorithms, including:
+- Naive Bayes
+- KNN Classifier
+- Random Forest Classifier
+- **Decision Tree Classifier** ✅ (final model used for its highest accuracy)
 """)
 
 # Section: Dataset Features
@@ -21,19 +26,19 @@ st.markdown("""
 ### 🗂️ Dataset Features:
 
 #### ✅ Categorical Features:
-- **Age**: Age group of the individual (e.g., `<35`, `>35`)
-- **EdLevel**: Highest education level attained (e.g., `Undergraduate`, `Master`, `PhD`)
-- **MentalHealth**: Mental health condition reported by the individual (`Yes` or `No`)
+- **Age**: Age group (e.g., `<35`, `>35`)
+- **EdLevel**: Highest education level (e.g., `Undergraduate`, `Master`, `PhD`)
+- **MentalHealth**: Mental health condition reported (`Yes` or `No`)
 - **MainBranch**: Primary professional domain (e.g., `Dev`, `NotDev`)
 
 #### ✅ Numerical Features:
-- **Employment**: A numerical indicator of employment condition (not the target)
-- **YearsCode**: Total years of coding experience (e.g., `7`, `15`, `40`)
-- **PreviousSalary**: Last known salary before current status
-- **ComputerSkills**: A numeric score representing computer proficiency
+- **Employment**: Employment indicator (not the target)
+- **YearsCode**: Total years of coding experience
+- **PreviousSalary**: Last known salary
+- **ComputerSkills**: Score representing computer proficiency
 
 #### 🎯 Target Variable:
-- **Employed**: Indicates current employment status (`1` = Employed, `0` = Unemployed)
+- **Employed**: Current employment status (`1` = Employed, `0` = Unemployed)
 """)
 
 # Show sample data

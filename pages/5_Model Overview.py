@@ -3,13 +3,20 @@ import streamlit as st
 # Page title
 st.title("🧠 Model Overview")
 
-# Introduction to Naive Bayes
+# Introduction to Decision Tree
 st.markdown("""
-### 📌 Naive Bayes Classifier
+### 📌 Model Selection Overview
 
-This project uses a **Naive Bayes Classifier**, a probabilistic algorithm based on **Bayes' Theorem** with the assumption of conditional independence between features.
+We experimented with several machine learning algorithms to predict employment status:
 
-It is particularly effective for structured data involving both categorical and numerical variables.
+| Algorithm               | Accuracy |
+|-------------------------|----------|
+| Naive Bayes             | 0.772    |
+| KNN Classifier          | 0.868    |
+| Random Forest Classifier| 0.928    |
+| **Decision Tree Classifier** ✅ | **0.999** |
+
+The **Decision Tree Classifier** was chosen as the final model due to its superior accuracy on this dataset.
 """)
 
 # Features and target
@@ -32,31 +39,21 @@ st.markdown("""
   - `0` → Unemployed
 """)
 
-# Why Naive Bayes
-st.header("🤔 Why Naive Bayes?")
+# Why Decision Tree
+st.header("🤔 Why Decision Tree?")
 st.markdown("""
-- ⚡ **Fast & efficient** on large datasets  
-- ✅ Handles both categorical & numerical data  
-- 💡 Works well even when some features are less informative  
-- 🧮 Ideal for baseline models due to simplicity and speed
+- ⚡ **Extremely high accuracy** (0.999) compared to other models  
+- ✅ Handles both categorical & numerical features  
+- 💡 Captures complex relationships between features  
+- 🧮 Easy to interpret and visualize  
 
-Given the dataset’s nature, Naive Bayes was a suitable and reliable choice.
+Given these advantages, the Decision Tree was selected as the most reliable model for predicting employment status.
 """)
 
 # Model task
 st.header("📊 Classification Task")
 st.markdown("""
-The goal is to build a **binary classification model** to predict whether an individual is currently **employed** based on background, education, and technical profile.
-""")
-
-# Accuracy score
-st.header("📈 Model Performance")
-st.markdown("""
-The **Naive Bayes classifier** achieved an accuracy of:
-
-### 🎯 **0.77** (77%)
-
-This indicates that the model correctly predicted employment status for 77% of the records in the test set.
+The goal is to build a **binary classification model** to predict whether an individual is currently **employed** based on their background, education, and technical profile.
 """)
 
 if st.button("Back to Feature Engineering"):

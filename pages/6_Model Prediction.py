@@ -5,7 +5,7 @@ import pandas as pd
 input_columns = ['Age', 'EdLevel', 'Employment', 'MentalHealth', 'MainBranch', 'YearsCode', 'PreviousSalary', 'ComputerSkills', 'APL', 'ASP.NET', 'ASP.NET Core ', 'AWS', 'Angular', 'Angular.js', 'Ansible', 'Assembly', 'Bash/Shell', 'Blazor', 'C', 'C#', 'C++', 'COBOL', 'Cassandra', 'Chef', 'Clojure', 'Cloud Firestore', 'Colocation', 'CouchDB', 'Couchbase', 'Crystal', 'Dart', 'Delphi', 'Deno', 'DigitalOcean', 'Django', 'Docker', 'Drupal', 'DynamoDB', 'Elasticsearch', 'Elixir', 'Erlang', 'Express', 'F#', 'FastAPI', 'Fastify', 'Firebase', 'Firebase Realtime Database', 'Flask', 'Flow', 'Fortran', 'Gatsby', 'Git', 'Go', 'Google Cloud', 'Google Cloud Platform', 'Groovy', 'HTML/CSS', 'Haskell', 'Heroku', 'Homebrew', 'IBM Cloud or Watson', 'IBM DB2', 'Java', 'JavaScript', 'Julia', 'Kotlin', 'Kubernetes', 'LISP', 'Laravel', 'Linode', 'Lua', 'MATLAB', 'Managed Hosting', 'MariaDB', 'Matlab', 'Microsoft Azure', 'Microsoft SQL Server', 'MongoDB', 'MySQL', 'Neo4j', 'Next.js', 'Node.js', 'Nuxt.js', 'OCaml', 'OVH', 'Objective-C', 'OpenStack', 'Oracle', 'Oracle Cloud Infrastructure', 'PHP', 'Perl', 'Phoenix', 'Play Framework', 'PostgreSQL', 'PowerShell', 'Pulumi', 'Puppet', 'Python', 'R', 'React.js', 'Redis', 'Ruby', 'Ruby on Rails', 'Rust', 'SAS', 'SQL', 'SQLite', 'Scala', 'Solidity', 'Spring', 'Svelte', 'Swift', 'Symfony', 'Terraform', 'TypeScript', 'Unity 3D', 'Unknown', 'Unreal Engine', 'VBA', 'VMware', 'Vue.js', 'Xamarin', 'Yarn', 'jQuery', 'npm']
 
 # Load model pipeline and required input columns
-with open("nb_pipeline.pkl", "rb") as f:
+with open("ep_pipeline.pkl", "rb") as f:
     model = pickle.load(f)
 
 st.set_page_config(page_title="Employment Predictor", layout="centered")

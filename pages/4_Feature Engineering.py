@@ -10,7 +10,8 @@ st.title("🛠️ Feature Engineering")
 # Intro
 st.markdown("""
 Feature engineering is the process of transforming raw data into meaningful features that improve model performance.  
-For this project, we prepared the dataset for training a **Naive Bayes classifier** by applying a variety of preprocessing techniques.
+For this project, we prepared the dataset for training a **Decision Tree Classifier** by applying a variety of preprocessing techniques.  
+We also experimented with Naive Bayes, KNN, and Random Forest classifiers.
 """)
 
 # Section: Categorical Encoding
