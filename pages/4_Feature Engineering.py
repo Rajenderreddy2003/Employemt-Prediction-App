@@ -5,7 +5,7 @@ import pandas as pd
 df = pd.read_csv("Employment_Data.csv")
 
 # Page title
-st.title("🛠️ Feature Engineering")
+st.title("Feature Engineering")
 
 # Intro
 st.markdown("""
@@ -15,18 +15,18 @@ We also experimented with Naive Bayes, KNN, and Random Forest classifiers.
 """)
 
 # Section: Categorical Encoding
-st.header("🔤 Handling Categorical Features")
+st.header("Handling Categorical Features")
 st.markdown("""
 The following features were identified as categorical and were encoded appropriately:
 
-- **Age**: Ordinal values like `<35`, `>35` encoded numerically  
-- **EdLevel**: Educational levels (`Undergraduate`, `Master`, `PhD`) were encoded using **Ordinal Encoding**  
-- **MentalHealth**: Binary (`Yes` / `No`) encoded as 0 and 1  
+- **Age**: Ordinal values like '<35', '>35' encoded numerically  
+- **EdLevel**: Educational levels ('Undergraduate', 'Master', 'PhD') were encoded using **Ordinal Encoding**  
+- **MentalHealth**: Binary ('Yes' / 'No') encoded as 0 and 1  
 - **MainBranch**: Encoded using **Label Encoding** or **One-Hot Encoding** based on model compatibility  
 """)
 
 # Section: Numerical Scaling
-st.header("📐 Scaling Numerical Features")
+st.header("Scaling Numerical Features")
 st.markdown("""
 Numerical features were scaled to normalize their impact on the model:
 
@@ -36,22 +36,22 @@ Numerical features were scaled to normalize their impact on the model:
 """)
 
 # Section: Feature Selection
-st.header("📌 Feature Selection & Cleanup")
+st.header("Feature Selection & Cleanup")
 st.markdown("""
 To enhance the model’s performance and eliminate noise, the following steps were applied:
 
 - **Mutual Information Classifier** was used to assess feature relevance
 - Based on low mutual information with the target, the following columns were removed:
-  - `YearsCodePro`
-  - `Accessibility`
-  - `Gender`
+  - 'YearsCodePro'
+  - 'Accessibility'
+  - 'Gender'
 
 - **Employment** column was retained as a valid numerical input  
 - **Employed** was kept as the **target variable**
 """)
 
 # Show preview of selected feature columns
-st.subheader("🧾 Final Feature Subset (First 5 Rows)")
+st.subheader("Final Feature Subset (First 5 Rows)")
 selected_columns = ['Age', 'EdLevel', 'Employment', 'MentalHealth', 'MainBranch', 'YearsCode', 'PreviousSalary', 'ComputerSkills', 'Employed']
 st.dataframe(df[selected_columns].head())
 

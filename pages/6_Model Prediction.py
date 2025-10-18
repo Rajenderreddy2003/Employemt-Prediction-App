@@ -9,7 +9,7 @@ with open("ep_pipeline.pkl", "rb") as f:
     model = pickle.load(f)
 
 st.set_page_config(page_title="Employment Predictor", layout="centered")
-st.title("💼 Employment Status Prediction")
+st.title("Employment Status Prediction")
 st.markdown("Fill out the details to predict if a person is employed.")
 
 # User input fields (with updates applied)

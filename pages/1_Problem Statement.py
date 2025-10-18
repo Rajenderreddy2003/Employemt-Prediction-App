@@ -2,10 +2,10 @@ import streamlit as st
 
 st.set_page_config(page_title="Problem & Objective", layout="centered")
 
-st.title("📌 Problem Statement & Objective")
+st.title("Problem Statement & Objective")
 st.markdown("---")
 
-## 🧩 Problem Statement
+## Problem Statement
 st.markdown("""
 In today’s data-driven world, predicting employability is a significant challenge due to the complex interplay of **technical skills**, **education**, **experience**, and **personal factors** such as **mental health** or **age**.
 
@@ -18,21 +18,21 @@ Hence, there is a need for a smart solution that:
 """)
 
 
-## 🎯 Project Objective
+## Project Objective
 st.markdown("""
 The main objective of this project is to build a **Machine Learning-based web application** that can:
 
-1. 🧠 **Analyze candidate information** including:
+1. **Analyze candidate information** including:
    - Educational qualifications
    - Technical and computer skills
    - Mental health status
    - Previous work and salary details
 
-2. 🔍 **Predict the employment status** (Employed or Not Employed)
+2. **Predict the employment status** (Employed or Not Employed)
 
-3. 🛠️ **Enable interactivity** using a Streamlit web interface
+3. **Enable interactivity** using a Streamlit web interface
 
-4. 📈 **Provide insights** on how certain skills and factors contribute to employability
+4. **Provide insights** on how certain skills and factors contribute to employability
 
 This tool can be used by:
 - Individuals to **self-assess their employability**
@@ -41,7 +41,7 @@ This tool can be used by:
 """)
 
 
-## ✅ Outcome
+## Outcome
 st.markdown("""
 By the end of this project, we aim to deliver a working system that not only predicts employment status accurately but also provides a **user-friendly interface** to engage with real-world survey data interactively.
 """)
